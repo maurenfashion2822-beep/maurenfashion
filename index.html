@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="MAURÉN — Wear It Your Way. A clean, modern unisex fashion store.">
+
+  <title>MAURÉN — Wear It Your Way</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="site-header">
+
+    <a class="brand"
+       href="#home"
+       aria-label="MAURÉN home">
+
+      <img
+        src="assets/logo.svg"
+        alt="MAURÉN logo">
+
+    </a>
+
+
+    <button
+      class="menu-toggle"
+      aria-label="Open menu">
+
+      ☰
+
+    </button>
+
+
+    <nav class="nav" id="nav">
+
+      <a href="#home">Home</a>
+
+      <a href="#shop">Shop</a>
+
+      <a href="#about">About</a>
+
+      <a href="#contact">Contact</a>
+
+
+      <button
+        class="bag-btn"
+        id="bagBtn">
+
+        Bag
+
+        <span id="bagCount">0</span>
+
+      </button>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main id="home">
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+      <div class="hero-copy reveal">
+
+        <p class="eyebrow">
+          MAURÉN / NEW SEASON
+        </p>
+
+
+        <h1>
+          Wear It<br>
+          <span>Your Way.</span>
+        </h1>
+
+
+        <p class="hero-text">
+
+          Clean silhouettes.
+          Everyday confidence.
+          A modern unisex collection made
+          to move with you.
+
+        </p>
+
+
+        <a
+          class="button"
+          href="#shop">
+
+          Explore Collection
+
+        </a>
+
+      </div>
+
+
+
+      <!-- M LOGO -->
+
+      <div class="hero-mark reveal">
+
+        <img
+          src="assets/logo-m.svg"
+          alt="MAURÉN M monogram">
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= TICKER ================= -->
+
+    <section
+      class="ticker"
+      aria-label="Brand statement">
+
+      <div>
+
+        MAURÉN •
+        WEAR IT YOUR WAY •
+        MAURÉN •
+        WEAR IT YOUR WAY •
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= SHOP ================= -->
+
+    <section
+      class="section"
+      id="shop">
+
+
+      <div class="section-heading reveal">
+
+        <div>
+
+          <p class="eyebrow">
+            SHOP / 01
+          </p>
+
+          <h2>
+            Selected Pieces
+          </h2>
+
+        </div>
+
+
+        <p>
+
+          Minimal essentials designed
+          for your everyday wardrobe.
+
+        </p>
+
+      </div>
+
+
+
+      <!-- PRODUCT FILTERS -->
+
+      <div class="filters reveal">
+
+        <button
+          class="filter active"
+          data-filter="all">
+
+          All
+
+        </button>
+
+
+        <button
+          class="filter"
+          data-filter="tops">
+
+          Tops
+
+        </button>
+
+
+        <button
+          class="filter"
+          data-filter="outerwear">
+
+          Outerwear
+
+        </button>
+
+
+        <button
+          class="filter"
+          data-filter="accessories">
+
+          Accessories
+
+        </button>
+
+      </div>
+
+
+
+      <!-- PRODUCTS -->
+
+      <div
+        class="product-grid"
+        id="productGrid">
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT / STATEMENT ================= -->
+
+    <section
+      class="statement"
+      id="about">
+
+
+      <div class="statement-inner reveal">
+
+        <p class="eyebrow">
+
+          MAURÉN / 02
+
+        </p>
+
+
+        <h2>
+
+          Style is personal.<br>
+
+          <span>
+            Make it yours.
+          </span>
+
+        </h2>
+
+
+        <p>
+
+          MAURÉN blends understated design
+          with a fresh sky-blue accent,
+          creating pieces that feel simple,
+          expressive and unmistakably yours.
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section
+      class="section contact"
+      id="contact">
+
+
+      <div class="section-heading reveal">
+
+        <div>
+
+          <p class="eyebrow">
+
+            CONTACT / 03
+
+          </p>
+
+
+          <h2>
+
+            Stay in the loop.
+
+          </h2>
+
+        </div>
+
+
+        <p>
+
+          Sign up for collection drops,
+          stories and special releases.
+
+        </p>
+
+      </div>
+
+
+
+      <!-- NEWSLETTER -->
+
+      <form
+        class="newsletter reveal"
+        id="newsletterForm">
+
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Your email address"
+          required>
+
+
+        <button
+          class="button"
+          type="submit">
+
+          Subscribe
+
+        </button>
+
+      </form>
+
+
+      <p
+        class="form-message"
+        id="formMessage"
+        role="status">
+
+      </p>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+
+    <img
+      src="assets/logo.svg"
+      alt="MAURÉN">
+
+
+    <p>
+
+      ©
+      <span id="year"></span>
+      MAURÉN.
+      Wear It Your Way.
+
+    </p>
+
+
+    <a href="https://www.maurénfashion.com">
+
+      www.maurénfashion.com
+
+    </a>
+
+  </footer>
+
+
+
+  <!-- ================= SHOPPING BAG ================= -->
+
+  <aside
+    class="bag-panel"
+    id="bagPanel"
+    aria-hidden="true">
+
+
+    <div class="bag-header">
+
+      <h2>
+        Your Bag
+      </h2>
+
+
+      <button
+        id="closeBag"
+        aria-label="Close bag">
+
+        ×
+
+      </button>
+
+    </div>
+
+
+
+    <!-- BAG PRODUCTS -->
+
+    <div id="bagItems">
+
+    </div>
+
+
+
+    <!-- BAG TOTAL -->
+
+    <div class="bag-total">
+
+      <span>
+        Total
+      </span>
+
+
+      <strong id="bagTotal">
+
+        ৳0
+
+      </strong>
+
+    </div>
+
+
+
+    <!-- CHECKOUT -->
+
+    <button
+      class="button full"
+      id="checkoutBtn">
+
+      Place Order
+
+    </button>
+
+  </aside>
+
+
+
+  <!-- ================= OVERLAY ================= -->
+
+  <div
+    class="overlay"
+    id="overlay">
+
+  </div>
+
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
